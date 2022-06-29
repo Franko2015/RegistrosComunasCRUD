@@ -1,3 +1,4 @@
+Create schema Comunas;
 
 use Comunas;
 
