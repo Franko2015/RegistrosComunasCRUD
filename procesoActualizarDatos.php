@@ -5,13 +5,10 @@
 	$consultaActualizar="UPDATE comuna SET nombre='$Comuna' WHERE id = '$id';";
 	$resultado= mysqli_query($con, $consultaActualizar);
 	if($resultado){
-	echo "<script>
-		alert('Comuna actualizada con éxito');
-		window.location= 'index.php'
-	</script>";
+	echo "Comuna actualizada con éxito";
 	mysqli_close($con);
 	}else{
-	echo "<script>alert('No se pudo insertar');</script>";
+	echo "No se pudo insertar";
 	header("Location: index.php");
 	}
 ?>

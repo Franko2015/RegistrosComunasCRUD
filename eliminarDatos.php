@@ -4,15 +4,10 @@
 	$consultaEliminar="DELETE FROM comuna WHERE id = '$id'";
 	$resultado= mysqli_query($con, $consultaEliminar);
 	if($resultado){
-	echo "<script>
-		alert('Comuna eliminada con éxito'); 
-		window.location= 'index.php'
-	</script>";
+	echo "Comuna eliminada con éxito";
 	mysqli_close($con);
-
-
 	}else{
-	echo "<script>alert('No se pudo insertar'); windows.history.go(-1);</script>";
+	echo "No se pudo insertar";
 	header("Location: index.php");
 	}
  ?>
